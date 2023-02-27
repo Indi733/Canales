@@ -1,63 +1,84 @@
 <!DOCTYPE html>
 <html>
 <head>
-    
 	<title>Canales de TV</title>
-    <link rel="icon" href="https://i.ibb.co/CWMGPWx/image-removebg-preview-31.png">
-    <style>
-body {
+	<link rel="icon" href="https://i.ibb.co/CWMGPWx/image-removebg-preview-31.png">
+	<style>
+		body {
 			background-color: #F4F4F4;
 			font-family: Arial, sans-serif;
+			animation: fadein 2s;
+			-webkit-animation: fadein 2s; /* Safari and Chrome */
 		}
 
-	h1 {
-		font-size: 36px;
-		color: #222222;
-		text-align: center;
-		margin-top: 50px;
-	}
+		@keyframes fadein {
+			from {
+				opacity: 0;
+			}
+			to {
+				opacity: 1;
+			}
+		}
 
-	.channel-container {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		margin-top: 50px;
-	}
+		/* Safari and Chrome */
+		@-webkit-keyframes fadein {
+			from {
+				opacity: 0;
+			}
+			to {
+				opacity: 1;
+			}
+		}
 
-	.channel {
-		background-color: #FFFFFF;
-		border: 1px solid #DDDDDD;
-		border-radius: 5px;
-		box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-		margin: 10px;
-		padding: 20px;
-		text-align: center;
-		transition: all 0.3s ease;
-		width: 250px;
-	}
+		h1 {
+			font-size: 36px;
+			color: #222222;
+			text-align: center;
+			margin-top: 50px;
+		}
 
-	.channel:hover {
-		transform: translateY(-5px);
-		box-shadow: 0 5px 10px rgba(0,0,0,0.3);
-	}
+		.channel-container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			margin-top: 50px;
+		}
 
-	.channel h2 {
-		font-size: 24px;
-		color: #222222;
-		margin-bottom: 10px;
-	}
+		.channel {
+			background-color: #FFFFFF;
+			border: 1px solid #DDDDDD;
+			border-radius: 5px;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+			margin: 10px;
+			padding: 20px;
+			text-align: center;
+			transition: all 0.3s ease;
+			width: 250px;
+		}
 
-	.channel a {
-		color: #4285F4;
-		font-weight: bold;
-		text-decoration: none;
-	}
+		.channel:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+		}
 
-	.channel a:hover {
-		text-decoration: underline;
-	}
-</style>
-  </head>
+		.channel h2 {
+			font-size: 24px;
+			color: #222222;
+			margin-bottom: 10px;
+		}
+
+		.channel a {
+			color: #4285F4;
+			font-weight: bold;
+			text-decoration: none;
+		}
+
+		.channel a:hover {
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body>
   <body>
 	<h1>Canales de TV</h1>
 	<div class="channel-container">
