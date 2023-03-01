@@ -58,6 +58,22 @@ body {
 	}
 </style>
   </head>
+
+<div class="counter">
+  Visitors: <span id="count">0</span>
+</div>
+
+<script>
+  var count = localStorage.getItem('count') || 0;
+  document.getElementById('count').textContent = count;
+  localStorage.setItem('count', ++count);
+</script>
+    
+    <div>
+  <h3>FUERA DE MI PÁGINA - GET OUT!</h3>
+  <p>(solo publiqué porque es la unica manera de tener una página de gh gratis)</p>
+</div>
+    
   <body>
 	<h1>Canales de TV</h1>
 	<div class="channel-container">
